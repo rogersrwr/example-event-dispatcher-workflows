@@ -49,7 +49,7 @@ async function run(command) {
     const res = await axios.post(dispatchUrl, payload, {
         headers: {
             Authorization: `Bearer ${token}`,
-            Accept: "application/vnd.github.v3+json" 
+            Accept: "application/vnd.github+json" 
         }
     })
     return res.status;
